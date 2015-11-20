@@ -47,7 +47,7 @@ private
   end
 
   def vehicle_params
-    params.require(:vehicle).permit(:year, :make, :model)
+    params.require(:vehicle).permit(:year, :make, :model, :nickname)
   end
 
   def set_vehicle
