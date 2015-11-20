@@ -1,0 +1,32 @@
+<div class="container"><p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @update.date %>
+</p>
+
+<p>
+  <strong>Mileage:</strong>
+  <%= @update.mileage %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @update.comment %>
+</p>
+
+<p>
+  <strong>Vehicle:</strong>
+  <%= @update.vehicle %>
+</p>
+
+<% @update.properties.each do |name, value| %>
+  <p>
+    <b><%= name.humanize %></b>
+    <%= value %>
+  </p>
+<% end %>
+
+<%= link_to 'Edit', edit_update_path(@update) %> |
+<%= link_to 'Back', updates_path %>
+</div>

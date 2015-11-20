@@ -1,0 +1,20 @@
+<div id="vehicle-<%= vehicle.id %>">  
+<div class="col-lg-3 col-md-6">
+      <div id="vehicle-widget" class="vehicle">
+         <div class="vehicle-heading text-center">
+            <h2 class="text-uppercase"><strong>Vehicle Nickname</strong></h2>
+         </div>
+         <div class="vehicle-heading text-center">
+            <%= vehicle.make %> <%= vehicle.model %>
+         </div>
+         <div class="vehicle-footer">
+            <div class="btn-group btn-group-justified text-uppercase text-center">
+               <a class="btn btn-default" role="button"><i class="fa fa-cloud-upload fa-2x"></i><br><small>Update</small></a>
+               <a class="btn btn-default" role="button"><i class="fa fa-share-alt fa-2x"></i><br><small>See Intervals</small></a>
+               <!--<a class="btn btn-default" role="button"><i class="fa fa-history fa-2x"></i><br><small>Information</small></a>-->
+               <%= link_to vehicle, :class => "btn btn-default" do %><i class="fa fa-history fa-2x"></i><br><small>Information</small><% end %>
+            </div>
+         </div>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2015-11-19
+  mileage: 1
+  comment: MyText
+  vehicle_id: 
+
+two:
+  date: 2015-11-19
+  mileage: 1
+  comment: MyText
+  vehicle_id: 
