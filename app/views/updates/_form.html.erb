@@ -7,7 +7,7 @@
     <%= f.input :date %>
     <%= f.input :mileage %>
     <%= f.input :comment %>
-    <%= f.association :vehicle %>
+    <%= f.association :vehicle, label_method: :nickname, value_method: :id, include_bank: false %>
   </div>
 
   <%= f.simple_fields_for :properties, OpenStruct.new(@update.properties) do |builder| %>

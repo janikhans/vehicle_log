@@ -4,6 +4,7 @@
     <li><%= @vehicle.make %></li>
     <li><%= @vehicle.model %></li>
     <li><%= @vehicle.user.email %></li>
+    <li><%= @vehicle.nickname %></li>
     <li><%= link_to "Edit", edit_vehicle_path %></li>
     <li><%= link_to "Destroy", @vehicle, method: :delete, data: {confirm: "Are you sure?"} %></li>
   </ul>

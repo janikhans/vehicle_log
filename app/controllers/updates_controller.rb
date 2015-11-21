@@ -9,7 +9,8 @@ class UpdatesController < ApplicationController
   end
 
   def new
-    @update = Update.new(service_id: params[:service_id])
+    @update = Update.new(service_id: params[:service_id], vehicle_id: params[:vehicle_id])
+    @vehicles = current_user.vehicles.all
   end
 
   def edit

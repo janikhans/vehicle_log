@@ -19,7 +19,7 @@
         <td><%= update.date %></td>
         <td><%= update.mileage %></td>
         <td><%= update.comment %></td>
-        <td><%= update.vehicle %></td>
+        <td><%= update.vehicle.nickname %></td>
         <td><%= link_to 'Show', update %></td>
         <td><%= link_to 'Edit', edit_update_path(update) %></td>
         <td><%= link_to 'Destroy', update, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -34,6 +34,4 @@
   <%= select_tag :service_id, options_from_collection_for_select(Service.all, :id, :name) %>
   <%= submit_tag "New Update", name: nil %>
 <% end %>
-
-<%= link_to 'New Update', new_update_path %>
 </div>

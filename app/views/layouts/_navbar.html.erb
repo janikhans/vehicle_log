@@ -9,6 +9,7 @@
         <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
             <% if user_signed_in? %>
+              <li><%= link_to "Garage", garage_path %></li>
               <li><%= link_to "New Service Item", new_service_path %></li>
               <li><%= link_to "Services", services_path %></li>
               <li><%= link_to "Updates", updates_path %></li>

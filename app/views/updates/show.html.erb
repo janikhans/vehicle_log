@@ -17,12 +17,12 @@
 
 <p>
   <strong>Vehicle:</strong>
-  <%= @update.vehicle %>
+  <%= @update.vehicle.nickname %>
 </p>
 
 <% @update.properties.each do |name, value| %>
   <p>
-    <b><%= name.humanize %></b>
+    <b><%= name.humanize %>:</b>
     <%= value %>
   </p>
 <% end %>
